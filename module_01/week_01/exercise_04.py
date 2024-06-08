@@ -66,7 +66,7 @@ def cosh_method(x, n):
         term = sign * (x ** (2 * i)) / factorial(2 * i)
         result += term
 
-    print(f"sinh({x}) = {result}")
+    print(f"cosh({x}) = {result}")
 
 
 sin_function(3.14, 10)
