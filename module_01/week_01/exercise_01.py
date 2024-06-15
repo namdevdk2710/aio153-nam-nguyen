@@ -1,4 +1,4 @@
-def classification_model(tp: int, fp: int, fn: int):
+def classification_model(tp, fp, fn):
     if not isinstance(tp, int):
         print("tp must be int")
         return
@@ -25,13 +25,8 @@ def classification_model(tp: int, fp: int, fn: int):
 
 
 classification_model(tp=2, fp=3, fn=4)
-print("=====================================")
 classification_model(tp='a', fp=3, fn=4)
-print("=====================================")
 classification_model(tp=2, fp='a', fn=4)
-print("=====================================")
 classification_model(tp=2, fp=3, fn='a')
-print("=====================================")
 classification_model(tp=2.1, fp=3, fn=4)
-print("=====================================")
 classification_model(tp=0, fp=3, fn=4)
